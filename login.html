@@ -3,33 +3,61 @@
 
 <head>
 
-  <title>Login</title>
+  <title>SV Games Login</title>
 
   <link rel="stylesheet" href="login.css">
 
 </head>
 
-<body class="login-body">
+<body>
 
 <!-- NAVBAR -->
 <nav>
 
   <ul>
-    <li>Home</li>
-    <li>Supreme Ventures Gaming</li>
-    <li>Lottery Games</li>
-    <li>JustBet</li>
-    <li>Acropolis Gaming</li>
-    <li>Help</li>
+
+    <!-- <li class="active">
+      Home
+    </li> -->
+    <li class="active">
+  <a href="index.html">Home</a>
+</li>
+
+    <li>
+      Supreme Ventures Gaming
+    </li>
+
+    <li>
+      Lottery Games
+    </li>
+
+    <li>
+      JustBet ▼
+    </li>
+
+    <li>
+      Acropolis Gaming
+    </li>
+
+    <li>
+      Help ▼
+    </li>
+
   </ul>
 
   <div class="btns">
 
-    <button class="login">Login</button>
+    <button class="login">
+      Login
+    </button>
 
-    <button class="register">Registration</button>
+    <button class="register">
+      Registration
+    </button>
 
-    <button class="download">Download</button>
+    <button class="download">
+      Download
+    </button>
 
   </div>
 
@@ -40,20 +68,104 @@
 
   <div class="login-box">
 
-    <h1>SV Games</h1>
+    <!-- LOGO -->
+    <img class="logo-img"
+    src="logo.png"
+    alt="">
 
     <h2>Sign In</h2>
 
-    <input type="text" placeholder="Mobile Number">
+    <form id="loginForm">
 
-    <input type="password" placeholder="Account PIN">
+      <!-- ROW -->
+      <div class="row">
 
-    <button class="signin-btn">
-      Login
-    </button>
+        <!-- COUNTRY -->
+        <div class="input-group">
 
-    <p class="forgot">
-      Forgot PIN?
+          <label>
+            Country code <span>*</span>
+          </label>
+
+          <select id="country">
+
+            <option value="">
+              Select
+            </option>
+
+            <option>
+              +1 (JM)
+            </option>
+
+            <option>
+              +91 (IN)
+            </option>
+
+          </select>
+
+          <small class="error"
+          id="countryError"></small>
+
+        </div>
+
+        <!-- MOBILE -->
+        <div class="input-group">
+
+          <label>
+            Mobile Number <span>*</span>
+          </label>
+
+          <input
+          type="text"
+          id="mobile"
+          placeholder="XXX-XXX-YYYY">
+
+          <small class="error"
+          id="mobileError"></small>
+
+        </div>
+
+      </div>
+
+      <!-- PIN -->
+      <div class="input-group pin-group">
+
+        <label>
+          Account PIN <span>*</span>
+        </label>
+
+        <input
+        type="password"
+        id="pin">
+
+        <span class="eye">
+          👁️
+        </span>
+
+        <small class="error"
+        id="pinError"></small>
+
+      </div>
+
+      <!-- FORGOT -->
+      <p class="forgot">
+        Forgot PIN?
+      </p>
+
+      <!-- LOGIN BUTTON -->
+      <button
+      type="submit"
+      class="circle-btn">
+
+        ✔️
+
+      </button>
+
+    </form>
+
+    <!-- SIGNUP -->
+    <p class="new-user">
+      New To Supreme Ventures Gaming?
     </p>
 
     <button class="signup-btn">
@@ -67,6 +179,7 @@
 <!-- FOOTER -->
 <footer class="footer">
 
+  <!-- LEFT -->
   <div class="footer-left">
 
     <p>Sports Betting Rules</p>
@@ -76,9 +189,12 @@
 
   </div>
 
+  <!-- CENTER -->
   <div class="footer-center">
 
-    <h3>© 2026, Supreme Ventures Gaming</h3>
+    <h3>
+      © 2026, Supreme Ventures Gaming
+    </h3>
 
     <p>
       SV Games is a registered trademark
@@ -100,6 +216,7 @@
 
   </div>
 
+  <!-- RIGHT -->
   <div class="footer-right">
 
     <p>Terms & Conditions</p>
@@ -110,5 +227,8 @@
 
 </footer>
 
+<script src="login.js"></script>
+
 </body>
+
 </html>
