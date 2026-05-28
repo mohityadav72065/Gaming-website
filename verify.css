@@ -70,13 +70,12 @@ body{
   box-sizing:border-box;
 }
 
-/* MESSAGE */
 .msg{
   color:#444;
   margin:25px 0;
 }
 
-/* VERIFY BUTTON */
+
 .verify-btn{
   width:100%;
   height:52px;
@@ -88,13 +87,13 @@ body{
   cursor:pointer;
 }
 
-/* TIMER */
+
 .timer{
   margin:20px 0;
   color:#555;
 }
 
-/* CANCEL */
+
 .cancel-btn{
   width:100%;
   height:52px;
@@ -106,7 +105,6 @@ body{
   cursor:pointer;
 }
 
-/* ERROR */
 .error{
   color:red;
   display:none;
