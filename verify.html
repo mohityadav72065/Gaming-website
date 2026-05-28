@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Verify Code</title>
+
+  <link rel="stylesheet" href="verify.css">
+
+</head>
+
+<body>
+
+<section class="verify-section">
+
+  <div class="verify-box">
+
+    <h2>Registration</h2>
+
+    <h3>Verification Code</h3>
+
+    <!-- CODE INPUT -->
+    <div class="input-group">
+
+      <label>
+        Verification Code <span>*</span>
+      </label>
+
+      <input
+      type="text"
+      id="code"
+      placeholder="Enter Code">
+
+      <small
+      class="error"
+      id="codeError">
+      </small>
+
+    </div>
+
+    <!-- REFERRAL -->
+    <div class="input-group">
+
+      <label>
+        Referral Code
+      </label>
+
+      <input
+      type="text"
+      placeholder="Optional">
+
+    </div>
+
+    <!-- MESSAGE -->
+    <p class="msg">
+      Verification code successfully sent.
+    </p>
+
+    <!-- VERIFY BUTTON -->
+    <button class="verify-btn">
+      Verify Code
+    </button>
+
+    <!-- TIMER -->
+    <p class="timer">
+      You can request verification code again in 22 seconds.
+    </p>
+
+    <!-- CANCEL -->
+    <button class="cancel-btn">
+      Cancel
+    </button>
+
+  </div>
+
+</section>
+
+<script src="verify.js"></script>
+
+</body>
+</html>
