@@ -1,0 +1,115 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:#f3f3f3;
+}
+
+/* SECTION */
+.verify-section{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* BOX */
+.verify-box{
+  width:420px;
+  background:white;
+  border:3px solid #418b45;
+  border-radius:10px;
+  padding:35px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* TITLE */
+.verify-box h2{
+  color:#418b45;
+  font-size:34px;
+  margin-bottom:25px;
+}
+
+/* SUBTITLE */
+.verify-box h3{
+  color:#418b45;
+  font-size:28px;
+  margin-bottom:30px;
+}
+
+/* INPUT GROUP */
+.input-group{
+  position:relative;
+  margin-bottom:25px;
+  text-align:left;
+}
+
+/* LABEL */
+.input-group label{
+  position:absolute;
+  top:-10px;
+  left:12px;
+  background:white;
+  padding:0 6px;
+  color:#418b45;
+  font-size:16px;
+}
+
+.input-group span{
+  color:red;
+}
+
+/* INPUT */
+.input-group input{
+  width:100%;
+  height:55px;
+  border:2px solid #ccc;
+  border-radius:6px;
+  padding:0 15px;
+  font-size:18px;
+  box-sizing:border-box;
+}
+
+/* MESSAGE */
+.msg{
+  color:#444;
+  margin:25px 0;
+}
+
+/* VERIFY BUTTON */
+.verify-btn{
+  width:100%;
+  height:52px;
+  border:none;
+  border-radius:6px;
+  background:#4ea33f;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+}
+
+/* TIMER */
+.timer{
+  margin:20px 0;
+  color:#555;
+}
+
+/* CANCEL */
+.cancel-btn{
+  width:100%;
+  height:52px;
+  border:none;
+  border-radius:6px;
+  background:#666;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+}
+
+/* ERROR */
+.error{
+  color:red;
+  display:none;
+  font-size:14px;
+  margin-top:5px;
+}
