@@ -7,7 +7,7 @@ document.getElementById("mobile");
 const mobileError =
 document.getElementById("mobileError");
 
-/* BUTTON CLICK */
+
 sendBtn.addEventListener("click", function(){
 
   if(mobile.value.trim() === ""){
@@ -35,7 +35,7 @@ sendBtn.addEventListener("click", function(){
 
 });
 
-/* INPUT CLICK OUTSIDE */
+
 mobile.addEventListener("blur", function(){
 
   if(mobile.value.trim() === ""){
